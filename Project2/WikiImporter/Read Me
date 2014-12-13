@@ -1,0 +1,9 @@
+Plik Read Me Franciszek Jemioło nr indeksu 346919
+Uwaga!
+W zadaniu podane jest, żeby wczytywać wszystkie odnośniki, które są w nawiasach
+[[...]]. Jednak wczytując tylko takie odnośniki, podane w pdfie przykłady nie 
+działają (dla physicist marie_curie carl_friedrich_gauss nie będzie znaleziona
+żadna ścieżka). Dlatego przyjmuje założenie, że odnośnikami są wszelkie wzmianki
+w <text>...</text> do istniejących artykułów o osobach. Tylko wtedy podane
+przykłady są znajdowane. Można to łatwo zmienić, zmieniając w 
+klasie artykuł dodajSąsiada regexa z a na "\\[\\[(^\\])*"+a+"(^\\])*\\]\\]".
